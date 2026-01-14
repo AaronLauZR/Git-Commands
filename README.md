@@ -1,6 +1,6 @@
 # Push/Pull Terminal Command
 > [!TIP]
-> <span title="Check tracked or untracked project files and the changes.">git status</span> 
+> git status - Check tracked or untracked project files and the changes.
 
 ## Steps
 1. Push the Project to Github
