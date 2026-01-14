@@ -25,8 +25,6 @@
     - <span title="Switch back to main branch, default main branch usually named 'Guideline'.">git checkout master</span>
     - <span title="Pull the merged files from Github to local.">git pull </span>
     - <span title="Optional: Delete(client side) to avoid duplicate branch name, or can choose to save for backup purpose.">git branch -D "branch name" </span>                            
-
-
 # Upload Large Files 
 > [!NOTE]
 >  Complete Below Steps in Command Prompt
@@ -44,3 +42,20 @@
 3) Upload to Github
     - <span title="Add command on the changed files.">git commit -m "message"</span>
     - <span title="Push changes files to Github.">git push -u origin master </span>
+
+# Edit Commit Date/Time
+> [!NOTE]
+>  Complete Below Steps in Command Prompt
+
+## Steps
+1) Locate to Local Repository Folder
+   - cd ...
+   - <span title="Switch to target branch if got several branch existed.">git branch</span>
+
+2) Edit First Commit Date & Time
+   - git commit --amend --no-edit --date="YYYY-MM-DD HH:MM:SS"
+  
+3) Edit Latest Commit Date & Time
+   - set GIT_AUTHOR_DATE=YYYY-MM-DD HH:MM:SS
+   - set GIT_COMMITTER_DATE=YYYY-MM-DD HH:MM:SS
+   - git commit --amend --no-edit
